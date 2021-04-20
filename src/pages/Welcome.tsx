@@ -3,6 +3,8 @@ import { StatusBar ,SafeAreaView, Text, Image, TouchableOpacity, StyleSheet } fr
 
 import wateringImg from '../assets/watering.png';
 import colors from '../styles/colors';
+import { Button } from '../components/Button';
+
 
 export function Welcome()  {
     return(
@@ -21,14 +23,7 @@ export function Welcome()  {
                     sempre que precisar.
                 </Text>
 
-                <TouchableOpacity 
-                    style={styles.button} 
-                    activeOpacity={0.7}
-                >
-                    <Text style={styles.buttonText}>
-                        >
-                    </Text>
-                </TouchableOpacity>
+                <Button />
                 <StatusBar/>
         </SafeAreaView>
     )
