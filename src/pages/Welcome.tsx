@@ -9,16 +9,18 @@ import {
     Dimensions
 } 
 from 'react-native';
+import { Feather } from '@expo/vector-icons';
 
 import wateringImg from '../assets/watering.png';
 import colors from '../styles/colors';
+
 
 
 export function Welcome() {
     return (
         <SafeAreaView style={styles.container}>
             <Text style={styles.title}>
-                Gerencie {'\n'}
+                    Gerencie {'\n'}
                     suas plantas {'\n'}
                     de forma fácil
                 </Text>
@@ -41,8 +43,11 @@ export function Welcome() {
                 style={styles.button}
                 activeOpacity={0.7}
             >
-                <Text style={styles.buttonText}>
-                    >
+                <Text style={styles.buttonIcon}>
+                    <Feather 
+                    name="chevron-right" 
+                    style={styles.buttonIcon}
+                />
                 </Text>
             </TouchableOpacity>
 
@@ -82,8 +87,8 @@ const styles = StyleSheet.create({
         height: 56,
         width: 56,
     },
-    buttonText: {
-        color: colors.white,
-        fontSize: 24
+    buttonIcon: {
+        fontSize: 32,
+        color: colors.white
     }
 })
