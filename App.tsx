@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, View } from 'react-native';
 import { Welcome } from './src/pages/Welcome';
+import AppLoading from 'expo-app-loading';
+
 import {
   useFonts,
   Jost_400Regular,
@@ -14,11 +15,8 @@ export default function App() {
   });
 
   if(!fontsLoaded)
-    return(
-      <View style={{ flex:1, justifyContent: 'center', alignItems: 'center'}}>
-        <Text>Guenta ai</Text>
-      </View>
-    )
+    return <AppLoading />
+    
 
   return (
     <Welcome />
