@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserIdentification } from './src/pages/UserIdentification';
+import { Confirmation } from './src/pages/Confirmation';
 import AppLoading from 'expo-app-loading';
 
 import {
@@ -19,6 +19,6 @@ export default function App() {
     
 
   return (
-    <UserIdentification />
+    <Confirmation />
   )
 }
